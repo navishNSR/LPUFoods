@@ -19,6 +19,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_margin="10dp"
+            android:textColor="@color/purple_200"
             android:text="Customer Details"
             android:textSize="18sp"
             android:textStyle="bold"/>
@@ -29,6 +30,7 @@
             app:layout_constraintEnd_toStartOf="@+id/switchDelivery"
             app:layout_constraintTop_toBottomOf="@+id/tvCustomerDetails"
             android:text="Pickup"
+            android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
@@ -48,6 +50,7 @@
             app:layout_constraintStart_toEndOf="@+id/switchDelivery"
             app:layout_constraintTop_toBottomOf="@+id/tvCustomerDetails"
             android:text="Delivery"
+            android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
@@ -61,7 +64,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginTop="05dp"
             android:layout_marginBottom="05dp"
-            android:hint="Enter your name"/>
+            android:hint="Enter Your Name"/>
 
         <EditText android:id="@+id/inputAddress"
             android:layout_width="match_parent"
@@ -125,6 +128,7 @@
             app:layout_constraintTop_toBottomOf="@+id/inputZip"
             android:layout_margin="10dp"
             android:text="Card Details"
+            android:textColor="@color/purple_200"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
@@ -136,11 +140,11 @@
             app:layout_constraintTop_toBottomOf="@id/tvCardDetails"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:layout_marginTop="05dp"
-            android:layout_marginBottom="05dp"
+            android:layout_marginTop="0.5dp"
+            android:layout_marginBottom="0.5dp"
             android:hint="Enter Card Number"
             android:inputType="number"
-            android:maxLength="16"/>
+            android:maxLength="16" />
 
         <EditText android:id="@+id/inputCardExpiry"
             android:layout_width="match_parent"
@@ -150,10 +154,10 @@
             app:layout_constraintTop_toBottomOf="@id/inputCardNumber"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:layout_marginTop="05dp"
-            android:layout_marginBottom="05dp"
-            android:hint="Enter Card expiry(mm/yyyy)"
-            android:inputType="number"
+            android:layout_marginTop="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:hint="Enter Card Expiry (mm/yyyy)"
+            android:inputType="date"
             android:maxLength="6"/>
 
         <EditText android:id="@+id/inputCardPin"
@@ -164,11 +168,11 @@
             app:layout_constraintTop_toBottomOf="@id/inputCardExpiry"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:layout_marginTop="05dp"
-            android:layout_marginBottom="05dp"
-            android:hint="Enter Card pin(3 digits)"
+            android:layout_marginTop="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:hint="Enter Card PIN (4 digits)"
             android:inputType="number"
-            android:maxLength="3"/>
+            android:maxLength="4"/>
 
         <TextView android:id="@+id/tvTotalItems"
             android:layout_width="wrap_content"
@@ -178,6 +182,7 @@
             app:layout_constraintTop_toBottomOf="@+id/inputCardPin"
             android:layout_margin="10dp"
             android:text="Total items in cart"
+            android:textColor="@color/purple_200"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
@@ -196,7 +201,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cartItemsRecyclerView"
             android:layout_margin="10dp"
-            android:text="Sub total"
+            android:text="Sub Total"
+            android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
@@ -206,7 +212,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cartItemsRecyclerView"
             android:layout_margin="10dp"
-            android:text="$0.0"
+            android:text="₹0.0"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
@@ -217,6 +223,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tvSubtotal"
             android:layout_margin="10dp"
             android:text="Delivery Charge"
+            android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
@@ -226,7 +233,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvSubtotal"
             android:layout_margin="10dp"
-            android:text="$0.0"
+            android:text="₹0.0"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
@@ -237,6 +244,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tvDeliveryCharge"
             android:layout_margin="10dp"
             android:text="Total"
+            android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
@@ -246,7 +254,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvDeliveryCharge"
             android:layout_margin="10dp"
-            android:text="$0.0"
+            android:text="₹0.0"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
@@ -262,7 +270,7 @@
             android:gravity="center"
             android:textColor="@color/white"
             android:padding="10dp"
-            android:layout_margin="10dp"
+            android:layout_margin="30dp"
             android:background="@drawable/button_bg"
             />
 

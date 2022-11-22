@@ -6,7 +6,7 @@ import android.os.Handler
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 
-class SplashActivity(contentLayoutId: Int) : AppCompatActivity(contentLayoutId) {
+class SplashActivity() : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)

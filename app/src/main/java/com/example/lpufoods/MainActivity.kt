@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity(), RestaurantListAdapter.RestaurantListCl
         setContentView(R.layout.activity_main)
 
         val actionBar: ActionBar? = supportActionBar
-        actionBar?.setTitle("Restaurant List")
+        actionBar?.setTitle("LPU Foods")
 
         val restaurantModel = getRestaurantData()
         initRecyclerView(restaurantModel)
